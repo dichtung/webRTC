@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>webRTC | VS</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/styles.css">
+	<script src="/utils/simplepeer.min.js">alert('skripta simplepeer uspesno ucitana!');</script>
+	<script src="/socket.io/socket.io.js">alert('skripta socket.io uspesno ucitana!');</script>
+	<script src="/utils/jquery.js">alert('skripta jquery uspesno ucitana!');</script>
+</head>
+
+<body>
+	<h1 id="connectionNumberHeader">Broj aktivnih konekcija je: 0</h1>
+	<h1 id="statusHeader" style="color:red;">Not connected</h1>
+	<h1 id="myId">My id: </h1>
+	<input id="myIdInput" type="text" disabled></input>
+	<h1 id="remoteId">Remote id: </h1>
+	<input id="remoteIdInput" type="text" disabled></input>
+
+
+	<div id="wrapper">
+		<div id="myVideoDiv">
+			<span id="selfViewSpan">My Video (outgoing)</span>
+			<video id="myVideo" autoplay></video>
+		</div>
+		<div id="remVideoDiv">
+			<span id="remoteViewSpan">Remote Video (incoming)</span>
+			<video id="remVideo" autoplay></video>
+		</div>
+	</div>
+	<footer>Žarković Nikola © 2019</footer>
+
+	<script src="scripts/main.js"></script>
+
+
+</body>
+
+</html>

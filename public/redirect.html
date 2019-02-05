@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<title>webRTC | VS</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body id="redBody">
+	<h1 id="redirect">
+		The maximum number of Peers is reached for a single P2P Network. Nobody likes being the third Wheel!
+	</h1>
+	<br />
+	<button id="retry" onclick="tryAgain()">Try Again!</button>
+	<footer>Žarković Nikola © 2019</footer>
+
+	<script>
+		function tryAgain() {
+			var loc = window.location.href;
+			window.location.replace(loc.substr(0, loc.indexOf('redirect.html')));
+		}
+	</script>
+
+</body>
+
+</html>
