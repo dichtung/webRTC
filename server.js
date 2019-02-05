@@ -50,6 +50,7 @@ io.on('connection', function(socket) {
   }else{
     //slucaj kada predjemo na 3+ konekcije, bitno je novonakacenom socketu reci da nije pozeljan na serveru!!!
     socket.emit('connRedirect');
+    console.log(`Socket.io server: A user is redirected: ${connectionNumber}`);
     connectionNumber--;
   }
 
